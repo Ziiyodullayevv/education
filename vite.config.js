@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     base: baseUrl,
     plugins: [react()],
     build: {
-      outDir: "build",
+      outDir: "dist",
       minify: true,
     },
   };

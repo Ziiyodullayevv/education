@@ -117,7 +117,13 @@ const HeaderDefault = memo(() => {
                     onClick={() => setShow1(!show1)}
                   ></button>
                 </div>
-                <Logo></Logo>
+                <Link to={"/"}>
+                  <img
+                    style={{ width: "150px" }}
+                    src="https://i.postimg.cc/NM135YYx/logo-logo-1.png"
+                    alt="logo"
+                  />
+                </Link>
               </div>
               <Navbar
                 expand="xl"
@@ -166,43 +172,6 @@ const HeaderDefault = memo(() => {
                       className="nav-item dropdown iq-responsive-menu"
                     >
                       <div className="search-box">
-                        <Link
-                          to="#"
-                          onClick={() => setShow2(!show2)}
-                          className={` nav-link p-0 ${show2 ? "show" : ""}`}
-                          id="search-drop"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <div className="btn-icon btn-sm rounded-pill btn-action">
-                            <span className="btn-inner">
-                              <svg
-                                className="icon-20"
-                                width="20"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <circle
-                                  cx="11.7669"
-                                  cy="11.7666"
-                                  r="8.98856"
-                                  stroke="currentColor"
-                                  strokeWidth="1.5"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                ></circle>
-                                <path
-                                  d="M18.0186 18.4851L21.5426 22"
-                                  stroke="currentColor"
-                                  strokeWidth="1.5"
-                                  strokeLinecap="round"
-                                  strokeLinejoin="round"
-                                ></path>
-                              </svg>
-                            </span>
-                          </div>
-                        </Link>
                         <ul
                           className={`dropdown-menu p-0 dropdown-search m-0 iq-search-bar ${
                             show2 ? "show" : ""
@@ -294,39 +263,6 @@ const HeaderDefault = memo(() => {
                           </li>
                         </Dropdown.Menu>
                       </div>
-                    </Dropdown>
-                    <Dropdown as="li" className="nav-items">
-                      <Dropdown.Toggle
-                        as={CustomToggle}
-                        href="#"
-                        variant=" nav-link d-flex align-items-center px-0"
-                        id="langDropdown"
-                      >
-                        <i className="fa-solid fa-language" size="md"></i>
-                      </Dropdown.Toggle>
-                      <Dropdown.Menu
-                        as="ul"
-                        className="dropdown-menu-end border-0 p-0 m-0"
-                      >
-                        <Dropdown.Item
-                          to="#"
-                          onClick={() => changeLanguage("en")}
-                        >
-                          en
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          to="#"
-                          onClick={() => changeLanguage("ar")}
-                        >
-                          ar
-                        </Dropdown.Item>
-                        <Dropdown.Item
-                          to="#"
-                          onClick={() => changeLanguage("de")}
-                        >
-                          de
-                        </Dropdown.Item>
-                      </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown as="li" className="nav-item">
                       <Dropdown.Toggle

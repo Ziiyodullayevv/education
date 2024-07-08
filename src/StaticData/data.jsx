@@ -2,6 +2,1247 @@ export const generateImgPath = (path) => {
   return window.origin + import.meta.env.VITE_URL + path;
 };
 
+export const lessonDays = [
+  {
+    image: "https://i.postimg.cc/tTHs5gmh/1-kun.jpg",
+    count: 1,
+    path: "pv1",
+    title: "Moliya Birjalari",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv2",
+    image: "https://i.postimg.cc/dVFXhgDs/2-kun.jpg",
+    count: 2,
+    title: "No data",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv3",
+    image: "https://i.postimg.cc/QtnRDBG7/3-kun.jpg",
+    count: 3,
+    title: "Savdo Hajmi",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv4",
+    image: "https://i.postimg.cc/wBMCG5nz/5-kun.jpg",
+    count: 4,
+    title: "No data",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv5",
+    image: "https://i.postimg.cc/wBMCG5nz/5-kun.jpg",
+    count: 5,
+    title: "Stocks Aksiyalar",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv6",
+    image: "https://i.postimg.cc/CK0NZwHQ/6-kun.jpg",
+    count: 6,
+    title: "News",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv7",
+    image: "https://i.postimg.cc/C5pD2NP6/7-kun.jpg",
+    count: 7,
+    title: "Aksiya Analiz",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv8",
+    image: "https://i.postimg.cc/xCDcjdvX/8-kun.jpg",
+    count: 8,
+    title: "Meeting 1",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv9",
+    image: "https://i.postimg.cc/0NJ0Hb5j/9-kun.jpg",
+    count: 9,
+    title: "Texnik Analiz",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv10",
+    image: "https://i.postimg.cc/LsT8SV8b/10-kun.jpg",
+    count: 10,
+    title: "Risk Qonunlari",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv11",
+    image: "https://i.postimg.cc/zXxmqPCW/11-kun.jpg",
+    count: 11,
+    title: "Non Farm Payrolls",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv12",
+    image: "https://i.postimg.cc/MpnLqZK2/12-kun.jpg",
+    count: 12,
+    title: "CPI & FOMC Tizim",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv13",
+    image: "https://i.postimg.cc/zfcK55BM/13-kun.jpg",
+    count: 13,
+    title: "Fibonacci",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv14",
+    image: "https://i.postimg.cc/Kv6P3mDy/14-kun.jpg",
+    count: 14,
+    title: "Prop Trading",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv15",
+    image: "https://i.postimg.cc/8CTcMGrT/15-kun.jpg",
+    count: 15,
+    title: "Tizim Yaratish",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv6",
+    image: "https://i.postimg.cc/VvYK0mqR/16-kun.jpg",
+    count: 16,
+    title: "Meeting 2",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv17",
+    image: "https://i.postimg.cc/7h2gKL3D/17-kun.jpg",
+    count: 17,
+    title: "Real Account",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv18",
+    image: "https://i.postimg.cc/zBMCwhR0/18-kun.jpg",
+    count: 18,
+    title: "Payout Verifecation",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv19",
+    image: "https://i.postimg.cc/pr9m5yZD/19-kun.jpg",
+    count: 19,
+    title: "Algo Trading",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv20",
+    image: "https://i.postimg.cc/CLK0nfsW/20-kun.jpg",
+    count: 20,
+    title: "Tizimli Savdo",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv21",
+    image: "https://i.postimg.cc/Kvs2Pv94/21-kun.jpg",
+    count: 21,
+    title: "Amaliyot",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+  {
+    path: "pv22",
+    image: "https://i.postimg.cc/VsxTmrHq/22-kun.jpg",
+    count: 22,
+    title: "Certifecate",
+    children: [
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Moliya Birjalari 1 - qism",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+    ],
+  },
+];
+
 export const geners = [
   {
     id: 1,
@@ -367,7 +1608,6 @@ export const movieTags = [
     title: "ott_home.sci-fi",
     type: "movie",
   },
-
 ];
 
 export const tvShowsTags = [

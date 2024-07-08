@@ -5,7 +5,6 @@ import { Col, Container, Row } from "react-bootstrap";
 
 //component
 import BreadCrumbWidget from "../../components/BreadcrumbWidget";
-import CastCard from "../../components/cards/CastCard";
 import PersonalityCard from "../../components/cards/PersonalityCard";
 
 // the hook

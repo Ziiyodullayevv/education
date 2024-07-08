@@ -64,12 +64,14 @@ const LoginPage = memo(() => {
       content: "This is a success message",
     });
   };
+
   const error = () => {
     messageApi.open({
       type: "error",
       content: "Parol yoki gmail xato kiritilgan!",
     });
   };
+
   return (
     <Fragment>
       {contextHolder}

@@ -85,7 +85,7 @@ const SectionSlider = memo(
                   to={link ? link : "/view-all"}
                   className="text-primary iq-view-all text-decoration-none"
                 >
-                  View All
+                  Hamasini Ko'rish
                 </Link>
               )}
             </div>

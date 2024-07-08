@@ -1,14 +1,11 @@
 import { Fragment, memo } from "react";
 
 //react bootstrap
-import { Breadcrumb, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 //function
-import { generateImgPath } from "../StaticData/data";
 
-//img
-const imagePath = generateImgPath("/assets/images/pages/01.webp");
-// the hook
+//hook
 import { useTranslation } from "react-i18next";
 
 const BreadCrumbWidget = memo((props) => {
@@ -17,22 +14,21 @@ const BreadCrumbWidget = memo((props) => {
     <Fragment>
       <div
         className="iq-breadcrumb"
-        style={{ backgroundImage: `url(${imagePath})` }}
+        style={{
+          backgroundImage: `url(https://aragonresearch.com/wp-content/uploads/2019/09/Using-Metrics-To-Measure-The-Business-Value-of-Your-Investments-1.jpg)`,
+        }}
       >
         <Container fluid>
           <Row className="align-items-center">
             <Col sm="12">
               <nav className="text-center">
-                <h2 className={`title ${props.class === false ? '' : 'text-capitalize'}`}>{t(props.title)}</h2>
-                <Breadcrumb
-                  className="main-bg"
-                  listProps={{
-                    className: "text-center justify-content-center",
-                  }}
+                <h2
+                  className={`title ${
+                    props.class === false ? "" : "text-capitalize"
+                  }`}
                 >
-                  <Breadcrumb.Item>{t("header.home")}</Breadcrumb.Item>
-                  <Breadcrumb.Item active>{t(props.title)}</Breadcrumb.Item>
-                </Breadcrumb>
+                  {t(props.title)}
+                </h2>
               </nav>
             </Col>
           </Row>

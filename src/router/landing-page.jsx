@@ -2,7 +2,7 @@ import { lazy } from "react";
 // layout
 import FrontendLayout from "../layouts/FrontendLayout";
 import BlankLayout from "../layouts/BlankLayout";
-import Loader from "../components/Loader";
+// import Loader from "../components/Loader";
 import { checkAuthLoader } from "../utilities/auth";
 
 // pages
@@ -107,7 +107,7 @@ export const LandingpageRouter = [
         element: <MoviePage />,
       },
       {
-        path: "/movies-detail",
+        path: ":movieId",
         element: <MovieDetail />,
       },
       {

@@ -1,21 +1,12 @@
 import React, { memo, Fragment, useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// react-router-dom
-import { Link } from "react-router-dom";
-
 // components
 import CustomButton from "../CustomButton";
 
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper";
-
-// img
-import ott1 from "/assets/images/movies/ott1.webp";
-import ott2 from "/assets/images/movies/ott2.webp";
-import ott3 from "/assets/images/movies/ott3.webp";
-import logo from "/assets/images/movies/imdb-logo.svg";
 
 // Redux Selector / Action
 import { useSelector } from "react-redux";
@@ -107,6 +98,34 @@ const OttHeroSlider = memo(() => {
       };
     }
   }, [active, themeSchemeDirection]);
+
+  const banner = [
+    {
+      id: 1,
+      path: "pv13",
+      title: "Fibonacci",
+      description:
+        "After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension rises following a tragic loss. Meanwhile, Daemon prepares for war.",
+      imgUrl: "https://i.postimg.cc/WpZytxXk/13-kun-1-qism.jpg",
+    },
+    {
+      id: 2,
+      path: "pv14",
+      title: "Prop Trading",
+      description:
+        "After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension rises following a tragic loss. Meanwhile, Daemon prepares for war.",
+      imgUrl: "https://i.postimg.cc/D0hKphBt/15-kun-1qism.png ",
+    },
+    {
+      id: 3,
+      path: "pv9",
+      title: "Bozor Trandlari",
+      description:
+        "After the death of their father, two siblings fight for the throne, thereby causing a civil war known as the Dance of the Dragons. Rhaenyra tries to hold the realm together as the tension rises following a tragic loss. Meanwhile, Daemon prepares for war.",
+      imgUrl: "https://i.postimg.cc/VL4K2wKX/9-kun-1-qism.jpg",
+    },
+  ];
+
   return (
     <Fragment>
       <div className="iq-banner-thumb-slider">
@@ -153,76 +172,30 @@ const OttHeroSlider = memo(() => {
                     className="swiper-horizontal swiper-container mb-0"
                     id="responsive-rtl-swiper"
                   >
-                    <SwiperSlide
-                      className="swiper-bg"
-                      id="iq-small-rtl-swiper"
-                      data-swiper-small-slide-index="small-one"
-                    >
-                      <div className="block-images position-relative">
-                        <div className="img-box">
-                          <img
-                            src={
-                              "https://external-preview.redd.it/j4oTaM826dQZCg7MHg8P8RW9o5AvSveIWnuDQL9m438.jpg?auto=webp&s=66263e05779b3db94e0e678a67dbba3fd3c291e4"
-                            }
-                            className="img-fluid"
-                            alt=""
-                            loading="lazy"
-                          />
-                          <div className="block-description">
-                            <h6 className="iq-title fw-500 mb-0">
-                              {t("ott_home.the_hunter")}
-                            </h6>
-                            <span className="fs-12">7 hr 6 minute</span>
+                    {banner.map((item) => (
+                      <SwiperSlide
+                        key={item.id}
+                        className="swiper-bg"
+                        id="iq-small-rtl-swiper"
+                        data-swiper-small-slide-index="small-one"
+                      >
+                        <div className="block-images position-relative">
+                          <div className="img-box">
+                            <img
+                              src={item.imgUrl}
+                              className="img-fluid"
+                              alt=""
+                              loading="lazy"
+                            />
+                            <div className="block-description">
+                              <h6 className="iq-title fw-500 mb-0">
+                                {banner.title}
+                              </h6>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide
-                      className="swiper-bg"
-                      id="iq-small-rtl-swiper"
-                      data-swiper-small-slide-index="small-two"
-                    >
-                      <div className="block-images position-relative">
-                        <div className="img-box">
-                          <img
-                            src={ott2}
-                            className="img-fluid"
-                            alt=""
-                            loading="lazy"
-                          />
-                          <div className="block-description">
-                            <h6 className="iq-title fw-500 mb-0">
-                              {t("ott_home.the_mandalorian")}
-                            </h6>
-                            <span className="fs-12">2 hr 14 minute</span>
-                          </div>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide
-                      className="swiper-bg"
-                      id="iq-small-rtl-swiper"
-                      data-swiper-small-slide-index="small-three"
-                    >
-                      <div className="block-images position-relative">
-                        <div className="img-box">
-                          <img
-                            src={ott3}
-                            className="img-fluid"
-                            alt=""
-                            loading="lazy"
-                          />
-                          <div className="block-description">
-                            <h6 className="iq-title fw-500 mb-0">
-                              {t("ott_home.better_call_saul")}
-                            </h6>
-                            <span className="fs-12">2 hr 55 minute</span>
-                          </div>
-                        </div>
-                      </div>
-                    </SwiperSlide>
+                      </SwiperSlide>
+                    ))}
                   </Swiper>
                   <div
                     className="slider-prev swiper-button"
@@ -273,208 +246,38 @@ const OttHeroSlider = memo(() => {
                 className="swiper-container"
                 id="iq-rtl-thumb-swiper"
               >
-                <SwiperSlide className="p-0" id="1" data-swiper-slide-index="0">
-                  <div className="slider--image block-images">
-                    <img
-                      src={
-                        "https://external-preview.redd.it/j4oTaM826dQZCg7MHg8P8RW9o5AvSveIWnuDQL9m438.jpg?auto=webp&s=66263e05779b3db94e0e678a67dbba3fd3c291e4"
-                      }
-                      loading="lazy"
-                      alt="banner"
-                    />
-                  </div>
-                  <div className="description">
-                    <div className="row align-items-center h-100">
-                      <div className="col-lg-6 col-md-12">
-                        <div className="slider-content">
-                          <div className="d-flex align-items-center RightAnimate mb-3"></div>
-                          <h1 className="texture-text big-font letter-spacing-1 line-count-1 text-capitalize RightAnimate-two">
-                            {t("ott_home.the_hunter")}
-                          </h1>
-                          <p className="line-count-3 RightAnimate-two">
-                            {t("ott_home.after_death")}
-                          </p>
-                          <div className="d-flex flex-wrap align-items-center gap-3 RightAnimate-three">
-                            <div className="slider-ratting d-flex align-items-center">
-                              <ul className="ratting-start p-0 m-0 list-inline text-warning d-flex align-items-center justify-content-left">
-                                <li>
-                                  <i
-                                    className="fa fa-star"
-                                    aria-hidden="true"
-                                  ></i>
-                                </li>
-                              </ul>
-                              <span className="text-white ms-2 font-size-14 fw-500">
-                                4.3/5
-                              </span>
-                              <span className="ms-2">
-                                <img
-                                  src={logo}
-                                  alt="imdb logo"
-                                  className="img-fluid"
-                                />
-                              </span>
-                            </div>
-                            <span className="font-size-14 fw-500">
-                              2 Hr : 6 Mins
-                            </span>
-                            <div className="text-primary font-size-14 fw-500 text-capitalize">
-                              {t("ott_home.genres")}:{" "}
-                              <Link
-                                to="/view-all"
-                                className="text-decoration-none ms-1"
-                              >
-                                {t("ott_home.drama")}
-                              </Link>
-                            </div>
-                            <div className="text-primary font-size-14 fw-500 text-capitalize">
-                              {t("ott_home.starting")}:{" "}
-                              <Link
-                                to="/cast-detail"
-                                className="text-decoration-none ms-1"
-                              >
-                                {t("ott_home.jeffrey_silver")}
-                              </Link>
-                            </div>
+                {banner.map((item) => (
+                  <SwiperSlide
+                    key={item.id}
+                    className="p-0"
+                    id="1"
+                    data-swiper-slide-index="0"
+                  >
+                    <div className="slider--image block-images">
+                      <img src={item.imgUrl} loading="lazy" alt="banner" />
+                    </div>
+                    <div className="description">
+                      <div className="row align-items-center h-100">
+                        <div className="col-lg-6 col-md-12">
+                          <div className="slider-content">
+                            <div className="d-flex align-items-center RightAnimate mb-3"></div>
+                            <h1 className="texture-text big-font letter-spacing-1 line-count-1 text-capitalize RightAnimate-two">
+                              {item.title || "Anonymous"}
+                            </h1>
+                            <p className="line-count-3 RightAnimate-two">
+                              {t("ott_home.after_death")}
+                            </p>
                           </div>
+                          <CustomButton
+                            buttonTitle={"Boshlash"}
+                            link={item.path}
+                            linkButton="false"
+                          />
                         </div>
-                        <CustomButton
-                          buttonTitle={t("ott_home.stream_now")}
-                          link="/movies-detail"
-                          linkButton="false"
-                        />
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide className="p-0" id="1" data-swiper-slide-index="1">
-                  <div className="slider--image block-images">
-                    <img src={ott2} loading="lazy" alt="banner" />
-                  </div>
-                  <div className="description">
-                    <div className="row align-items-center h-100">
-                      <div className="col-lg-6 col-md-12">
-                        <div className="slider-content">
-                          <div className="d-flex align-items-center RightAnimate mb-3"></div>
-                          <h1 className="texture-text big-font letter-spacing-1 line-count-1 text-capitalize RightAnimate-two">
-                            {t("ott_home.the_mandalorian")}
-                          </h1>
-                          <p className="line-count-3 RightAnimate-two">
-                            {t("ott_home.after_galactic")}
-                          </p>
-                          <div className="d-flex flex-wrap align-items-center gap-3 RightAnimate-three">
-                            <div className="slider-ratting d-flex align-items-center">
-                              <ul className="ratting-start p-0 m-0 list-inline text-warning d-flex align-items-center justify-content-left">
-                                <li>
-                                  <i
-                                    className="fa fa-star"
-                                    aria-hidden="true"
-                                  ></i>
-                                </li>
-                              </ul>
-                              <span className="text-white ms-2 font-size-14 fw-500">
-                                4.3/5
-                              </span>
-                            </div>
-                            <span className="font-size-14 fw-500">
-                              2 Hr : 14 Mins
-                            </span>
-                            <div className="text-primary font-size-14 fw-500 text-capitalize">
-                              {t("ott_home.genres")}:{" "}
-                              <Link
-                                to="/view-all"
-                                className="text-decoration-none ms-1"
-                              >
-                                {t("ott_home.sci_fi")}
-                              </Link>
-                            </div>
-                            <div className="text-primary font-size-14 fw-500 text-capitalize">
-                              {t("ott_home.starting")}:{" "}
-                              <Link
-                                to="/cast-detail"
-                                className="text-decoration-none ms-1"
-                              >
-                                {t("ott_home.james_chinlund")}
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <CustomButton
-                          buttonTitle={t("ott_home.stream_now")}
-                          link="/movies-detail"
-                          linkButton="false"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide className="p-0" id="1" data-swiper-slide-index="2">
-                  <div className="slider--image block-images">
-                    <img src={ott3} loading="lazy" alt="banner" />
-                  </div>
-                  <div className="description">
-                    <div className="row align-items-center h-100">
-                      <div className="col-lg-6 col-md-12">
-                        <div className="slider-content">
-                          <div className="d-flex align-items-center RightAnimate mb-3"></div>
-                          <h1 className="texture-text big-font letter-spacing-1 line-count-1 text-capitalize RightAnimate-two">
-                            {t("ott_home.better_call_saul")}
-                          </h1>
-                          <p className="line-count-3 RightAnimate-two">
-                            {t("ott_home.ex_jimmy")}
-                          </p>
-                          <div className="d-flex flex-wrap align-items-center gap-3 RightAnimate-three">
-                            <div className="slider-ratting d-flex align-items-center">
-                              <ul className="ratting-start p-0 m-0 list-inline text-warning d-flex align-items-center justify-content-left">
-                                <li>
-                                  <i
-                                    className="fa fa-star"
-                                    aria-hidden="true"
-                                  ></i>
-                                </li>
-                              </ul>
-                            </div>
-                            <span className="font-size-14 fw-500">
-                              2 Hr : 55 Mins
-                            </span>
-                            <div className="text-primary font-size-14 fw-500 text-capitalize">
-                              {t("ott_home.genres")}:{" "}
-                              <Link
-                                to="/view-all"
-                                className="text-decoration-none ms-1"
-                              >
-                                {t("ott_home.horror")}
-                              </Link>
-                            </div>
-                            <div className="text-primary font-size-14 fw-500 text-capitalize">
-                              {t("ott_home.starting")}:{" "}
-                              <Link
-                                to="/cast-detail"
-                                className="text-decoration-none ms-1"
-                              >
-                                {t("ott_home.brenda_chapman")}
-                              </Link>
-                              <span className="text-body">,</span>
-                              <Link
-                                to="/cast-detail"
-                                className="text-decoration-none ms-1"
-                              >
-                                {t("ott_home.caleb_deschannelr")}
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                        <CustomButton
-                          buttonTitle={t("ott_home.stream_now")}
-                          link="/movies-detail"
-                          linkButton="false"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>

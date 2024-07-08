@@ -490,7 +490,7 @@ export const lessonDays = [
     title: "Risk Qonunlari",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Money Management",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -506,23 +506,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Risk Management",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -546,39 +530,7 @@ export const lessonDays = [
     title: "Non Farm Payrolls",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Non Farm Payrolls",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -602,7 +554,7 @@ export const lessonDays = [
     title: "CPI & FOMC Tizim",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Consumer Price Index",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -618,23 +570,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Federal Open Market Committee",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -658,7 +594,7 @@ export const lessonDays = [
     title: "Fibonacci",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Fibonacci (1 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -674,23 +610,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Fibonacci (2 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -714,7 +634,7 @@ export const lessonDays = [
     title: "Prop Trading",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Prop Trading (1 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -730,23 +650,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Prop Trading (2 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -770,7 +674,7 @@ export const lessonDays = [
     title: "Tizim Yaratish",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Tizim Yaratish (1 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -786,23 +690,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Tizim Yaratish (2 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -826,39 +714,7 @@ export const lessonDays = [
     title: "Meeting 2",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Meeting 2",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -882,39 +738,7 @@ export const lessonDays = [
     title: "Real Account",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Real Account",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -938,39 +762,7 @@ export const lessonDays = [
     title: "Payout Verifecation",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Payout Verification",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -994,7 +786,7 @@ export const lessonDays = [
     title: "Algo Trading",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Yordamchi robotlar bilan savdo (1 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -1010,7 +802,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Yordamchi robotlar bilan savdo (2 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -1026,7 +818,23 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Yordamchi robotlar bilan savdo (3 - qism)",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Yordamchi robotlar bilan savdo (4 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -1050,7 +858,7 @@ export const lessonDays = [
     title: "Tizimli Savdo",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Tizimli Savdo (1 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -1066,23 +874,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Tizimli Savdo (2 - qism)",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -1162,7 +954,7 @@ export const lessonDays = [
     title: "Certifecate",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "So'nggi tavsiyalar",
         videoJsOptions: {
           autoplay: false,
           controls: true,

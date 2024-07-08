@@ -10,7 +10,7 @@ export const lessonDays = [
     title: "Moliya Birjalari",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Intizom",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
         videoJsOptions: {
@@ -28,7 +28,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Birjalar",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
         videoJsOptions: {
@@ -46,7 +46,25 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Daromad Qayerdan Keladi",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "To'g'ri va Noto'g'ri",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
         videoJsOptions: {
@@ -69,10 +87,10 @@ export const lessonDays = [
     path: "pv2",
     image: "https://i.postimg.cc/dVFXhgDs/2-kun.jpg",
     count: 2,
-    title: "No data",
+    title: "Broker Tanlash",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Broker Haqida Malumot",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -88,7 +106,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Buy % Sell",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -104,7 +122,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Swop & Spread",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -128,7 +146,7 @@ export const lessonDays = [
     title: "Savdo Hajmi",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Lot & Hajm",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -144,7 +162,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Kredit Yelkasi",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -160,7 +178,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Marja",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -179,12 +197,12 @@ export const lessonDays = [
   },
   {
     path: "pv4",
-    image: "https://i.postimg.cc/wBMCG5nz/5-kun.jpg",
+    image: "https://i.postimg.cc/W3x0BxhL/4-kun.jpg",
     count: 4,
-    title: "No data",
+    title: "MetaTrader",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Funksiyalar",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -200,7 +218,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Stop va Take",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -216,7 +234,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Yapon Shamlari",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -240,7 +258,7 @@ export const lessonDays = [
     title: "Stocks Aksiyalar",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Aksiya nima?",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -256,7 +274,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Gigant Company",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -272,7 +290,23 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Aksiya Filter",
+        videoJsOptions: {
+          autoplay: false,
+          controls: true,
+          responsive: true,
+          techOrder: ["youtube"],
+          sources: [
+            {
+              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
+              type: "video/youtube",
+            },
+          ],
+          youtube: { iv_load_policy: 1 },
+        },
+      },
+      {
+        title: "Analiz Tahlil",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -296,7 +330,7 @@ export const lessonDays = [
     title: "News",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Fundamental Analiz",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -312,23 +346,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Economic calendar",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -352,7 +370,7 @@ export const lessonDays = [
     title: "Aksiya Analiz",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Hisobotlar tekshirish",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -368,7 +386,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Portfel tuzish",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -384,7 +402,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Passive Daromad",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -408,39 +426,7 @@ export const lessonDays = [
     title: "Meeting 1",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Meeting",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -464,7 +450,7 @@ export const lessonDays = [
     title: "Texnik Analiz",
     children: [
       {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Froktal Analiz",
         videoJsOptions: {
           autoplay: false,
           controls: true,
@@ -480,23 +466,7 @@ export const lessonDays = [
         },
       },
       {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
+        title: "Bozor Trandlari",
         videoJsOptions: {
           autoplay: false,
           controls: true,

@@ -1,99 +1,175 @@
-import React, { Fragment, memo } from 'react'
+import React, { Fragment, memo, useState } from "react";
 
-//react-boostrap
-import { Button, Form, Row, Col } from 'react-bootstrap'
+// react-bootstrap
+import { Button, Form, Row, Col } from "react-bootstrap";
 
-//hook
-import { useTranslation } from 'react-i18next'
+// hook
+import { useNavigate } from "react-router-dom";
 
 const ReviewComponent = memo(() => {
-    const { t } = useTranslation();
-    return (
-        <Fragment>
-            <div className="streamit-reviews">
-                <div id="comments" className="comments-area validate-form">
-                    <p className='masvideos-noreviews mt-3'>
-                        {t('detail_page.no_reviews')}
-                    </p>
-                </div>
-                <div className="review_form">
-                    <div className="comment-respond">
-                        <h3 className='fw-500 my-2'>
-                            {t('detail_page.first_review')}
-                        </h3>
-                        <p className="comment-notes">
-                                            <span>
-                                                Your email address will not be published.
-                                            </span>
-                                            <span> Required fields are marked
-                                                <span className="required"> * </span>
-                                            </span>
-                        </p>
-                        <div className="d-flex align-items-center mb-4">
-                                            <label>
-                                                Your rating
-                                            </label>
-                                            <div className="star ms-4 text-primary">
-                                                <span>
-                                                <i className="fa-regular fa-star"></i>
-                                                </span>{" "}
-                                                <span>
-                                                <i className="fa-regular fa-star"></i>
-                                                </span>{" "}
-                                                <span>
-                                                <i className="fa-regular fa-star"></i>
-                                                </span>{" "}
-                                                <span>
-                                                <i className="fa-regular fa-star"></i>
-                                                </span>{" "}
-                                                <span>
-                                                <i className="fa-regular fa-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                        <Row>
-                            <Col md="12">
-                                <Form.Group className='form-group'>
-                                    <Form.Label>{t('detail_page.your_review')} <span className='required'> *</span></Form.Label>
-                                    <textarea className='form-control' name='comment' cols="5" rows="8" required></textarea>
-                                </Form.Group>
-                            </Col>
-                            <Col md="6">
-                                <Form.Group className='form-group'>
-                                    <Form.Label>{t('detail_page.name')} <span className='required'> *</span></Form.Label>
-                                    <Form.Control type='text' name='author' size='30' required />
-                                </Form.Group>
-                            </Col>
-                            <Col md="6">
-                                <Form.Group className='form-group'>
-                                    <Form.Label>{t('detail_page.email')} <span className='required'> *</span></Form.Label>
-                                    <Form.Control type='email' name='email' size='30' required />
-                                </Form.Group>
-                            </Col>
-                            <Col md="12">
-                                
-                                    <div className='mt-3 mt-3 d-flex gap-2 align-items-center'>
-                                        <Form.Check.Input className='mt-0' type='checkbox' id='check1' />
-                                        <Form.Check.Label htmlFor="check1">{t('detail_page.save_name')}</Form.Check.Label>
-                                    </div>
- 
-                            </Col>
-                            <Col md="12">
-                                <div className='form-submit mt-4'>
-                                    <div className="iq-button">
-                                        <Button name="submit" type="submit" id="submit" className="btn text-uppercase position-relative" value="Submit">
-                                            <span className="button-text">{t('detail_page.submit')}</span>{" "}
-                                            <i className="fa-solid fa-play"></i>
-                                        </Button>
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-                    </div>
-                </div>
-            </div>
-        </Fragment>
-    )
-})
+  const navigate = useNavigate();
+  const back = () => {
+    navigate(-1);
+  };
 
-export default ReviewComponent
+  const [comment, setComment] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const TELEGRAM_BOT_TOKEN = "6843683663:AAFNOjam2-zo260-eqYGt2JWGkQ_DGSZscM";
+    const CHAT_ID = "961047307";
+    const message = `Ism: ${name}\nGmail: ${email}\nComment: ${comment}`;
+
+    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+    const data = {
+      chat_id: CHAT_ID,
+      text: message,
+    };
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        alert("Xabar yuborildi!");
+        setComment("");
+        setName("");
+        setEmail("");
+      } else {
+        alert("Xabar yuborishda xatolik yuz berdi.");
+      }
+    } catch (error) {
+      alert("Xatolik: " + error.message);
+    }
+  };
+
+  return (
+    <Fragment>
+      <div className="container-fluid my-5">
+        <div className="streamit-reviews">
+          <div className="review_form pt-5">
+            <div className="comment-respond">
+              <div onClick={back} className="iq-button my-5">
+                <Button
+                  name="submit"
+                  type="submit"
+                  id="submit"
+                  className="btn text-uppercase position-relative"
+                  value="Submit"
+                >
+                  <span className="button-text">Ortga Qaytish</span>{" "}
+                  <i className="fa-solid fa-play"></i>
+                </Button>
+              </div>
+              <h3 className="fw-500 my-2">
+                Ushbu darslik haqida fikringizni qoldiring!
+              </h3>
+              <p className="comment-notes">
+                <span>
+                  Sizning elektron pochta manzilingiz chop etilmaydi.{" "}
+                </span>
+                <span>
+                  Majburiy maydonlar belgilangan
+                  <span className="required"> * </span>
+                </span>
+              </p>
+
+              <Form onSubmit={handleSubmit}>
+                <Row>
+                  <Col md="12">
+                    <Form.Group className="form-group">
+                      <Form.Label>
+                        Fikr bidirish uchun maydon
+                        <span className="required"> *</span>
+                      </Form.Label>
+                      <textarea
+                        className="form-control"
+                        name="comment"
+                        cols="5"
+                        rows="8"
+                        required
+                        value={comment}
+                        onChange={(e) => setComment(e.target.value)}
+                      ></textarea>
+                    </Form.Group>
+                  </Col>
+                  <Col md="6">
+                    <Form.Group className="form-group">
+                      <Form.Label>
+                        Ismingiz
+                        <span className="required"> *</span>
+                      </Form.Label>
+                      <Form.Control
+                        type="text"
+                        name="author"
+                        size="30"
+                        required
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                      />
+                    </Form.Group>
+                  </Col>
+                  <Col md="6">
+                    <Form.Group className="form-group">
+                      <Form.Label>
+                        Gmail manzilingiz
+                        <span className="required"> *</span>
+                      </Form.Label>
+                      <Form.Control
+                        type="email"
+                        name="email"
+                        size="30"
+                        required
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                      />
+                    </Form.Group>
+                  </Col>
+                  <Col md="12">
+                    <div className="mt-3 mt-3 d-flex gap-2 align-items-center">
+                      <Form.Check.Input
+                        className="mt-0"
+                        type="checkbox"
+                        id="check1"
+                      />
+                      <Form.Check.Label htmlFor="check1">
+                        Keyingi safar sharhlashim uchun ismim, elektron pochta
+                        manzilim va veb-saytimni ushbu brauzerda saqlang.
+                      </Form.Check.Label>
+                    </div>
+                  </Col>
+                  <Col md="12">
+                    <div className="form-submit mt-4">
+                      <div className="iq-button">
+                        <Button
+                          name="submit"
+                          type="submit"
+                          id="submit"
+                          className="btn text-uppercase position-relative"
+                          value="Submit"
+                        >
+                          <span className="button-text">Jonatish</span>{" "}
+                          <i className="fa-solid fa-play"></i>
+                        </Button>
+                      </div>
+                    </div>
+                  </Col>
+                </Row>
+              </Form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Fragment>
+  );
+});
+
+export default ReviewComponent;

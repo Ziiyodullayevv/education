@@ -1,4 +1,4 @@
-import React, { Fragment, memo, useState } from "react";
+import React, { Fragment, memo } from "react";
 
 //react-bootstrap
 import { Row, Col, Container, Button } from "react-bootstrap";
@@ -16,7 +16,6 @@ import { lessonDays } from "../../StaticData/data";
 import { useEnterExit } from "../../utilities/usePage";
 
 // the hook
-import { useTranslation } from "react-i18next";
 
 const MovieDetail = memo(() => {
   useEnterExit();
@@ -38,6 +37,7 @@ const MovieDetail = memo(() => {
   const params = useParams();
 
   const youtube = lessonDays.find((item) => item.path === params.movieId);
+
   return (
     <Fragment>
       {youtube.children.map((item) => (
@@ -78,13 +78,10 @@ const MovieDetail = memo(() => {
                               </span>
                             </li>
                           </ul>
-                          <div
-                            style={{ width: "200px" }}
-                            className="movie-detail-select"
-                          >
-                            <Button style={{ width: "100%" }}>
-                              Izoh Qoldiring
-                            </Button>
+                          <div>
+                            <Link to={"/comments"} style={{ width: "100%" }}>
+                              <Button>Izoh Qoldiring</Button>
+                            </Link>
                           </div>
                         </div>
                       </Col>

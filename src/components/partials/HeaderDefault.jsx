@@ -107,19 +107,9 @@ const HeaderDefault = memo(() => {
           <Container fluid className="navbar-inner">
             <div className="d-flex align-items-center justify-content-between w-100 landing-header">
               <div className="d-flex gap-3 gap-xl-0 align-items-center">
-                <div>
-                  <button
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#navbar_main"
-                    aria-controls="navbar_main"
-                    className="d-xl-none btn btn-primary rounded-pill p-1 pt-0 toggle-rounded-btn"
-                    onClick={() => setShow1(!show1)}
-                  ></button>
-                </div>
-                <Link to={"/"}>
+                <Link to={"/"}>l
                   <img
-                    style={{ width: "150px" }}
+                    style={{ maxWidth: "120px", width: "100%" }}
                     src="https://i.postimg.cc/NM135YYx/logo-logo-1.png"
                     alt="logo"
                   />

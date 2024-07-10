@@ -6,9 +6,6 @@ import { Col, Container, Form, Row } from "react-bootstrap";
 
 //react-router-dom
 
-//components
-import Logo from "../../components/logo";
-
 // the hook
 import { useTranslation } from "react-i18next";
 
@@ -28,7 +25,7 @@ const LoginPage = memo(() => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://api.emiratesacademy.uz/api/Auth/sign-in",
+        "https://api.emiratesacademy.sarvarbekabduqodirov.uz/api/Auth/sign-in",
         {
           method: "POST",
           headers: {
@@ -49,8 +46,9 @@ const LoginPage = memo(() => {
       console.log("Response:", data);
       success();
       navigate("/");
+      console.log(data);
     } catch (error) {
-      console.error("Error:", error);
+      console.error("Error otash:", error);
     }
   };
 
@@ -80,7 +78,6 @@ const LoginPage = memo(() => {
         <div
           className="vh-100"
           style={{
-            // backgroundImage: "url(assets/images/pages/01.webp)",
             backgroundImage:
               "url(https://kalix.club/uploads/posts/2022-12/1672269852_kalix-club-p-pattern-programmirovaniya-krasivo-5.jpg)",
             backgroundSize: "cover",
@@ -93,8 +90,12 @@ const LoginPage = memo(() => {
             <Row className="justify-content-center align-items-center height-self-center vh-100">
               <Col lg="5" md="12" className="align-self-center">
                 <div className="user-login-card bg-body">
-                  <div className="text-center">
-                    <Logo />
+                  <div className="text-center mb-4">
+                    <img
+                      width="200"
+                      src="https://i.postimg.cc/NM135YYx/logo-logo-1.png"
+                      alt=""
+                    />
                   </div>
                   <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3">
@@ -102,7 +103,7 @@ const LoginPage = memo(() => {
                         {t("form.username_or_email")}
                       </Form.Label>
                       <Form.Control
-                        type="text"
+                        type="email"
                         className="rounded-0"
                         required
                         autoComplete="username"

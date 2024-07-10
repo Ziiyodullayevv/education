@@ -4,6 +4,7 @@ import FrontendLayout from "../layouts/FrontendLayout";
 import BlankLayout from "../layouts/BlankLayout";
 // import Loader from "../components/Loader";
 import { checkAuthLoader } from "../utilities/auth";
+import ReviewComponent from "../components/ReviewComponent";
 
 // pages
 const OTTPage = lazy(() => import("../views/MainPages/OTTPage"));
@@ -110,6 +111,7 @@ export const LandingpageRouter = [
         path: ":movieId",
         element: <MovieDetail />,
       },
+      { path: "/comments", element: <ReviewComponent /> },
       {
         path: "/tv-shows",
         element: <TvShowsList />,

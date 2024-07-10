@@ -969,38 +969,6 @@ export const lessonDays = [
           youtube: { iv_load_policy: 1 },
         },
       },
-      {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
-      {
-        title: "Moliya Birjalari 1 - qism",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
-      },
     ],
   },
 ];

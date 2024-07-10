@@ -12,57 +12,22 @@ import {
 // react-router-dom
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-//redux
-import { useDispatch } from "react-redux";
-
-import { theme_scheme_direction } from "../../store/setting/actions";
-
 // components
-import Logo from "../logo";
 import CustomToggle from "../CustomToggle";
 
 // the hook
 import { useTranslation } from "react-i18next";
 
-// img
-import user from "/assets/images/user/user1.webp";
-import ott from "/assets/images/mega-menu/new-home.webp";
-import home from "/assets/images/mega-menu/home.webp";
-import movie from "/assets/images/mega-menu/movie.webp";
-import tvshow from "/assets/images/mega-menu/tv-show.webp";
-import video from "/assets/images/mega-menu/video.webp";
-import shop from "/assets/images/mega-menu/shop-home.webp";
-
 const HeaderDefault = memo(() => {
-  const dispatch = useDispatch();
   const [isMega, setIsMega] = useState(true);
   const location = useLocation();
 
   //for translation
   const { t, i18n } = useTranslation();
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-
-    if (lng === "ar") {
-      dispatch(theme_scheme_direction("rtl"));
-    } else {
-      dispatch(theme_scheme_direction("ltr"));
-    }
-  };
 
   const [show, setShow] = useState(false);
   const [show1, setShow1] = useState(false);
   const [show2, setShow2] = useState(false);
-
-  const [open, setOpen] = useState(false);
-  const [open1, setOpen1] = useState(false);
-  const [open2, setOpen2] = useState(false);
-  const [open3, setOpen3] = useState(false);
-  const [open4, setOpen4] = useState(false);
-  const [open5, setOpen5] = useState(false);
-  const [open6, setOpen6] = useState(false);
-  const [open7, setOpen7] = useState(false);
-  const [open8, setOpen8] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -108,7 +73,6 @@ const HeaderDefault = memo(() => {
             <div className="d-flex align-items-center justify-content-between w-100 landing-header">
               <div className="d-flex gap-3 gap-xl-0 align-items-center">
                 <Link to={"/"}>
-                  l
                   <img
                     style={{ maxWidth: "120px", width: "100%" }}
                     src="https://i.postimg.cc/NM135YYx/logo-logo-1.png"
@@ -125,19 +89,7 @@ const HeaderDefault = memo(() => {
                   visibility: `${show1 === true ? "visible" : "hidden"}`,
                 }}
                 id="navbar_main"
-              >
-                <Container fluid className="container-fluid p-lg-0">
-                  <Offcanvas.Header
-                    className="px-0"
-                    closeButton
-                    onHide={() => setShow1(false)}
-                  >
-                    <div className="navbar-brand ms-3">
-                      <Logo></Logo>
-                    </div>
-                  </Offcanvas.Header>
-                </Container>
-              </Navbar>
+              ></Navbar>
 
               <div className="right-panel">
                 <Button
@@ -354,7 +306,7 @@ const HeaderDefault = memo(() => {
                             ></path>
                           </svg>
                           <span className="font-size-14 fw-500 text-capitalize text-white">
-                            {user?.firstName || "Anonymous"}
+                            {user.firstName || "Anonymous"}
                           </span>
                         </li>
 

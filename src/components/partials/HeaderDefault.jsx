@@ -107,7 +107,8 @@ const HeaderDefault = memo(() => {
           <Container fluid className="navbar-inner">
             <div className="d-flex align-items-center justify-content-between w-100 landing-header">
               <div className="d-flex gap-3 gap-xl-0 align-items-center">
-                <Link to={"/"}>l
+                <Link to={"/"}>
+                  l
                   <img
                     style={{ maxWidth: "120px", width: "100%" }}
                     src="https://i.postimg.cc/NM135YYx/logo-logo-1.png"

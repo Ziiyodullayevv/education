@@ -2,6 +2,23 @@ export const generateImgPath = (path) => {
   return window.origin + import.meta.env.VITE_URL + path;
 };
 
+export const lessonDay = [
+  {
+    image: "https://i.postimg.cc/tTHs5gmh/1-kun.jpg",
+    count: 1,
+    path: "pv1",
+    title: "Moliya Birjalari",
+    children: [
+      {
+        title: "Intizom",
+        description:
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
+        url: "https://vimeo.com/981316247",
+      },
+    ],
+  },
+];
+
 export const lessonDays = [
   {
     image: "https://i.postimg.cc/tTHs5gmh/1-kun.jpg",
@@ -13,73 +30,25 @@ export const lessonDays = [
         title: "Intizom",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
+        url: "https://vimeo.com/981316247",
       },
       {
         title: "Birjalar",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
+        url: "https://vimeo.com/981356744",
       },
       {
         title: "Daromad Qayerdan Keladi",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
+        url: "https://vimeo.com/981364364",
       },
       {
         title: "To'g'ri va Noto'g'ri",
         description:
           "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit sint ipsum dolor quis, cum  laudantium voluptate autem enim atque harum, corruptiduimus molestiae numquam totam exercitationem magni a. Laboriosam atque tempore tempora opti error rerum tenetur non ipsum",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
+        url: "https://vimeo.com/981381914",
       },
     ],
   },
@@ -91,51 +60,15 @@ export const lessonDays = [
     children: [
       {
         title: "Broker Haqida Malumot",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
+        url: "https://vimeo.com/981936111",
       },
       {
         title: "Buy % Sell",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
+        url: "https://vimeo.com/981936111",
       },
       {
         title: "Swop & Spread",
-        videoJsOptions: {
-          autoplay: false,
-          controls: true,
-          responsive: true,
-          techOrder: ["youtube"],
-          sources: [
-            {
-              src: "https://youtu.be/V7h7AcKyzXI?si=rD_zWF4yheIYJmV6",
-              type: "video/youtube",
-            },
-          ],
-          youtube: { iv_load_policy: 1 },
-        },
+        url: "https://vimeo.com/981936111",
       },
     ],
   },
